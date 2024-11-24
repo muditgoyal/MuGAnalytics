@@ -1,0 +1,154 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Twklausanne 300", sans-serif;
+    background-color: #fafafa;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    width: auto;
+    min-width: 266px;
+}
+
+.header-container {
+    margin-bottom: 10px;
+}
+
+.default-text {
+    width: 100%;
+    font-family: "Twklausanne 300", sans-serif;
+    font-size: 18px;
+    color: #b3b3b3;
+    margin: 0;
+    font-weight: 400;
+}
+
+.companies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    gap: 4px;
+}
+
+.company-name-container {
+    display: block;
+    padding: 0;
+}
+
+.company-name {
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+    transition: color 0.3s;
+    color: #b3b3b3;
+    font-family: "Twklausanne 350", sans-serif;
+    cursor: pointer;
+}
+
+/* Specific company styles */
+.y-combinator:hover { color: #fb651e; }
+.bessemer:hover { color: #3f3f3f; }
+.citi:hover { color: #003b70; }
+._spark:hover { color: #000; }
+.berkeley:hover { color: #FDB515; }
+
+.more-section-container {
+    margin: 4px 0;
+}
+
+.about-section-container {
+    margin-top: 20px;
+    color: #000;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-section-container a {
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.about-section-container a:hover {
+    opacity: 0.7;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 32px;
+    }
+    
+    .content-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .company-name {
+        font-size: 28px;
+    }
+}
+
+.backlink-container {
+    color: #b3b3b3;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.backlink {
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    font-family: "Twklausanne 300", sans-serif;
+    font-size: 18px;
+}
+
+.backlink:hover {
+    opacity: 0.7;
+}
+
+.paragraph-4 {
+    max-width: 280px;
+    margin: 0;
+    font-family: "Twklausanne 300", sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.text-span {
+    color: #000;
+    font-weight: 500;
+}
+
+.email-link {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: #000;
+} 
