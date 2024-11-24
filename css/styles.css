@@ -1,3 +1,9 @@
+/* Add at the top of your CSS */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
 /* Reset and base styles */
 body {
     margin: 0;
@@ -98,14 +104,38 @@ body {
         font-size: 32px;
     }
     
+    .default-text {
+        font-size: 16px;
+    }
+    
+    .paragraph-4 {
+        font-size: 16px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
     .content-container {
         padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 479px) {
     .company-name {
         font-size: 28px;
+    }
+    
+    .default-text {
+        font-size: 14px;
+    }
+    
+    .paragraph-4 {
+        font-size: 14px;
+    }
+    
+    .backlink {
+        font-size: 14px;
     }
 }
 
@@ -151,4 +181,21 @@ body {
 
 .email-link:hover {
     color: #000;
+}
+
+/* Add these to improve touch interactions */
+@media (hover: none) {
+    .company-name, .email-link, .backlink {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Increase touch target sizes */
+    .backlink {
+        padding: 8px 0;
+    }
+    
+    .email-link {
+        padding: 4px 0;
+    }
 } 
