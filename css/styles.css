@@ -174,13 +174,20 @@ body {
 }
 
 .email-link {
-    color: #b3b3b3;
+    display: inline-block;
+    color: #000;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 4px 0;
+    background-color: transparent;
 }
 
 .email-link:hover {
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 /* Add these to improve touch interactions */
@@ -198,4 +205,10 @@ body {
     .email-link {
         padding: 4px 0;
     }
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin: 4px 0;
 } 
